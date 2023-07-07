@@ -1,4 +1,6 @@
-package reservation;
+package reservation.discount.condition;
+
+import reservation.Screening;
 
 public class SequenceCondition implements DiscountCondition{
     private int sequence;

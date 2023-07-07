@@ -2,6 +2,10 @@ package reservation;
 
 import java.time.LocalDateTime;
 
+import reservation.customer.Customer;
+import reservation.movie.Movie;
+import reservation.movie.Reservation;
+
 public class Screening {
     private Movie movie;
     private int sequence;
@@ -22,11 +26,11 @@ public class Screening {
     }
 
     private Money calculateFee(int audienceCount) {
-        return movie.caculateMovieFee(this).times(audienceCount);
+        return movie.calculateMovieFee(this).times(audienceCount);
     }
 
-    public void getMoney() {
-       
+    public Money getMovieFee() {
+       return movie.getFee();
     }
 
     //예매 기능

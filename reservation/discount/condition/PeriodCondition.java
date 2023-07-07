@@ -1,7 +1,9 @@
-package reservation;
+package reservation.discount.condition;
 
 import java.time.DayOfWeek;
 import java.time.LocalTime;
+
+import reservation.Screening;
 
 public class PeriodCondition implements DiscountCondition{
     // 기간 조건

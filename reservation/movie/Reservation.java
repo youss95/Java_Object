@@ -1,4 +1,8 @@
-package reservation;
+package reservation.movie;
+
+import reservation.Money;
+import reservation.Screening;
+import reservation.customer.Customer;
 
 public class Reservation {
     private Customer customer;
